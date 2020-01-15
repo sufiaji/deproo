@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/id_list_review"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/id_layout_review_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="12dp"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/id_title_review"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1"
+            android:text="Review"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:clickable="true"
+            android:onClick="onSeeAllReviewClick"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Lihat semua"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="8dp"
+            android:gravity="right" />
+
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:layout_below="@id/id_layout_review_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.jcminarro.roundkornerlayout.RoundKornerLinearLayout
+                android:id="@+id/id_ly_r1_1"
+                android:layout_width="230dp"
+                android:layout_height="120dp"
+                android:background="@color/pink"
+                app:corner_radius="12dp"
+                android:orientation="vertical">
+
+                <com.elyeproj.loaderviewlibrary.LoaderTextView
+                    android:id="@+id/id_name_review1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="12sp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="10dp"
+                    app:width_weight="0.3"/>
+
+                <RatingBar
+                    android:id="@+id/id_rating_review1"
+                    style="@android:style/Widget.Holo.RatingBar.Small"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <com.elyeproj.loaderviewlibrary.LoaderTextView
+                    android:id="@+id/id_review1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="10dp"
+                    android:textSize="10sp"
+                    android:maxLines="3"
+                    app:width_weight="0.6"/>
+
+            </com.jcminarro.roundkornerlayout.RoundKornerLinearLayout>
+
+            <com.jcminarro.roundkornerlayout.RoundKornerLinearLayout
+                android:id="@+id/id_ly_r1_2"
+                android:layout_width="230dp"
+                android:layout_height="120dp"
+                android:background="@color/pink"
+                app:corner_radius="12dp"
+                android:layout_marginLeft="12dp"
+                android:orientation="vertical">
+
+                <com.elyeproj.loaderviewlibrary.LoaderTextView
+                    android:id="@+id/id_name_review2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="12sp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="10dp"
+                    app:width_weight="0.3"/>
+
+                <RatingBar
+                    android:id="@+id/id_rating_review2"
+                    style="@android:style/Widget.Holo.RatingBar.Small"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <com.elyeproj.loaderviewlibrary.LoaderTextView
+                    android:id="@+id/id_review2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="4dp"
+                    android:textSize="10sp"
+                    android:maxLines="3"
+                    app:width_weight="0.6"/>
+
+            </com.jcminarro.roundkornerlayout.RoundKornerLinearLayout>
+
+            <com.jcminarro.roundkornerlayout.RoundKornerLinearLayout
+                android:id="@+id/id_ly_r1_3"
+                android:layout_width="230dp"
+                android:layout_height="120dp"
+                android:background="@color/pink"
+                app:corner_radius="12dp"
+                android:layout_marginLeft="12dp"
+                android:orientation="vertical">
+
+                <com.elyeproj.loaderviewlibrary.LoaderTextView
+                    android:id="@+id/id_name_review3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="12sp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="4dp"
+                    app:width_weight="0.3"/>
+
+                <RatingBar
+                    android:id="@+id/id_rating_review3"
+                    style="@android:style/Widget.Holo.RatingBar.Small"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <com.elyeproj.loaderviewlibrary.LoaderTextView
+                    android:id="@+id/id_review3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="4dp"
+                    android:textSize="10sp"
+                    android:maxLines="3"
+                    app:width_weight="0.6"/>
+
+            </com.jcminarro.roundkornerlayout.RoundKornerLinearLayout>
+
+            <com.jcminarro.roundkornerlayout.RoundKornerLinearLayout
+                android:id="@+id/id_ly_r1_4"
+                android:layout_width="230dp"
+                android:layout_height="120dp"
+                android:background="@color/pink"
+                app:corner_radius="12dp"
+                android:layout_marginLeft="12dp"
+                android:orientation="vertical">
+
+                <com.elyeproj.loaderviewlibrary.LoaderTextView
+                    android:id="@+id/id_name_review4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="12sp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="10dp"
+                    app:width_weight="0.3"/>
+
+                <RatingBar
+                    android:id="@+id/id_rating_review4"
+                    style="@android:style/Widget.Holo.RatingBar.Small"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <com.elyeproj.loaderviewlibrary.LoaderTextView
+                    android:id="@+id/id_review4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="4dp"
+                    android:textSize="10sp"
+                    android:maxLines="3"
+                    app:width_weight="0.6"/>
+
+            </com.jcminarro.roundkornerlayout.RoundKornerLinearLayout>
+
+            <com.jcminarro.roundkornerlayout.RoundKornerLinearLayout
+                android:id="@+id/id_ly_r1_5"
+                android:layout_width="230dp"
+                android:layout_height="120dp"
+                android:background="@color/pink"
+                app:corner_radius="12dp"
+                android:layout_marginLeft="12dp"
+                android:orientation="vertical">
+
+                <com.elyeproj.loaderviewlibrary.LoaderTextView
+                    android:id="@+id/id_name_review5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="12sp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="10dp"
+                    app:width_weight="0.3"/>
+
+                <RatingBar
+                    android:id="@+id/id_rating_review5"
+                    style="@android:style/Widget.Holo.RatingBar.Small"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <com.elyeproj.loaderviewlibrary.LoaderTextView
+                    android:id="@+id/id_review5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="4dp"
+                    android:textSize="10sp"
+                    android:maxLines="3"
+                    app:width_weight="0.6"/>
+
+            </com.jcminarro.roundkornerlayout.RoundKornerLinearLayout>
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/id_rel_layout"
+    android:layout_width="match_parent"
+    android:layout_height="280dp">
+
+    <com.daimajia.slider.library.SliderLayout
+        android:id="@+id/id_slider_asset"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        custom:auto_cycle="false"
+        custom:indicator_visibility="visible"
+        custom:pager_animation="Accordion"
+        android:background="@color/colorGray"
+        custom:pager_animation_span="100" />
+
+    <TextView
+        android:id="@+id/id_call_broker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/green47D476"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="18dp"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:gravity="center_vertical"
+        android:textSize="12sp"
+        android:drawableLeft="@drawable/ic_phone_call"
+        android:textColor="@color/white"
+        android:clickable="true"
+        android:onClick="onTextCallClick"
+        android:text="  0819899545"/>
+
+</RelativeLayout>

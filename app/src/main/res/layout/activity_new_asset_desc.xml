@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/id_edittext_desc_long"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/id_button_save_desc"
+        android:layout_margin="@dimen/dimen_5dp"
+        android:background="#f3f1eb"
+        android:gravity="top"
+        android:textSize="@dimen/font_14sp"
+        android:inputType="textMultiLine|textCapSentences"
+        android:scrollbars="vertical" />
+
+    <Button
+        android:id="@+id/id_button_save_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_5dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        android:onClick="onSaveDescrClick"
+        android:theme="@style/MyButton"
+        android:text="Simpan"/>
+
+</RelativeLayout>

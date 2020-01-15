@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            layout="@layout/broker_header"/>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/id_layout_include_review"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <include
+                    layout="@layout/broker_list_review_2" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/id_layout_no_review"
+                android:layout_width="match_parent"
+                android:layout_height="164dp"
+                android:background="@color/colorGray">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:gravity="center"
+                    android:textSize="24sp"
+                    android:layout_alignParentTop="true"
+                    android:text="Belum Ada Review"/>
+                <com.ornach.nobobutton.NoboButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_alignParentBottom="true"
+                    app:nb_text="Beri Review Broker Ini"
+                    android:layout_marginBottom="12dp"
+                    app:nb_backgroundColor="@color/colorPrimaryDark"
+                    app:nb_focusColor="@color/colorPrimary"
+                    app:nb_textColor="#FFF"
+                    app:nb_textSize="16sp"
+                    app:nb_radius="5dp"
+                    android:onClick="onGiveReviewClick"/>
+                <!--
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="6dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/gray3A3D35"
+                    android:text="Beri Review Broker Ini"
+                    android:clickable="true"
+                    android:onClick="onGiveReviewClick"
+                    android:background="@drawable/round_button_white"/>
+                    -->
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/id_layout_include_asset"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <include
+                    layout="@layout/home_properti_2" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/id_layout_no_asset"
+                android:layout_width="match_parent"
+                android:layout_height="96dp"
+                android:layout_marginTop="12dp"
+                android:background="@color/colorGray">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:gravity="center"
+                    android:textSize="24sp"
+                    android:layout_alignParentTop="true"
+                    android:text="Belum Ada Asset"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="8dp" />
+
+    </LinearLayout>
+
+</ScrollView>

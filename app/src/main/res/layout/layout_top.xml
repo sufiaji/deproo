@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/id_layout_drawable"
+        android:layout_width="match_parent"
+        android:layout_height="172dp"
+        android:orientation="horizontal"
+        android:background="@drawable/top_bg_anim0">
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/id_layout_searchbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include layout="@layout/layout_top_searchbar"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@id/id_layout_searchbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include layout="@layout/layout_top_scrollcard"/>
+    </LinearLayout>
+
+</RelativeLayout>

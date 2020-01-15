@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/id_list_asset"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/id_layout_properti_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/id_title_asset"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1"
+            android:text="Asset"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+        <TextView
+            android:clickable="true"
+            android:onClick="onSeeAllAssetClick"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Lihat semua"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="8dp"
+            android:gravity="right" />
+
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:layout_below="@id/id_layout_properti_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/id_ly_p1_1"
+                android:layout_width="@dimen/card_promo_w_long"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:orientation="vertical">
+
+                <com.jcminarro.roundkornerlayout.RoundKornerLinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    app:corner_radius="4dp">
+
+                    <com.elyeproj.loaderviewlibrary.LoaderImageView
+                        android:id="@+id/id_asset_1"
+                        android:layout_width="@dimen/card_promo_w_long"
+                        android:layout_height="@dimen/card_promo_h"
+                        android:scaleType="centerCrop"/>
+
+                </com.jcminarro.roundkornerlayout.RoundKornerLinearLayout>
+
+                <com.elyeproj.loaderviewlibrary.LoaderTextView
+                    android:id="@+id/id_tasset_1_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/headerTitle"
+                    android:textSize="12sp"
+                    app:width_weight="0.6"
+                    />
+
+                <com.elyeproj.loaderviewlibrary.LoaderTextView
+                    android:id="@+id/id_tasset_1_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:textColor="@color/headerTitle"
+                    android:textSize="10sp"
+                    app:width_weight="0.8"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/id_ly_p1_2"
+                android:layout_toRightOf="@id/id_ly_p1_1"
+                android:layout_width="@dimen/card_promo_w_long"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:orientation="vertical">
+
+                <com.jcminarro.roundkornerlayout.RoundKornerLinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    app:corner_radius="4dp">
+
+                    <com.elyeproj.loaderviewlibrary.LoaderImageView
+                        android:id="@+id/id_asset_2"
+                        android:layout_width="@dimen/card_promo_w_long"
+                        android:layout_height="@dimen/card_promo_h"
+                        android:scaleType="centerCrop"/>
+
+                </com.jcminarro.roundkornerlayout.RoundKornerLinearLayout>
+
+                <com.elyeproj.loaderviewlibrary.LoaderTextView
+                    android:id="@+id/id_tasset_2_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/headerTitle"
+                    app:width_weight="0.4"
+                    android:textSize="12sp" />
+
+                <com.elyeproj.loaderviewlibrary.LoaderTextView
+                    android:id="@+id/id_tasset_2_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:textColor="@color/headerTitle"
+                    android:textSize="10sp"
+                    app:width_weight="0.7"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/id_ly_p1_3"
+                android:layout_toRightOf="@id/id_ly_p1_2"
+                android:layout_width="@dimen/card_promo_w_long"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:orientation="vertical">
+
+                <com.jcminarro.roundkornerlayout.RoundKornerLinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    app:corner_radius="4dp">
+
+                    <com.elyeproj.loaderviewlibrary.LoaderImageView
+                        android:id="@+id/id_asset_3"
+                        android:layout_width="@dimen/card_promo_w_long"
+                        android:layout_height="@dimen/card_promo_h"
+                        android:scaleType="centerCrop"/>
+
+                </com.jcminarro.roundkornerlayout.RoundKornerLinearLayout>
+
+                <com.elyeproj.loaderviewlibrary.LoaderTextView
+                    android:id="@+id/id_tasset_3_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/headerTitle"
+                    android:textSize="12sp"
+                    app:width_weight="0.6"
+                    />
+
+                <com.elyeproj.loaderviewlibrary.LoaderTextView
+                    android:id="@+id/id_tasset_3_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:textColor="@color/headerTitle"
+                    android:textSize="10sp"
+                    app:width_weight="0.7"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/id_ly_p1_4"
+                android:layout_toRightOf="@id/id_ly_p1_3"
+                android:layout_width="@dimen/card_promo_w_long"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:orientation="vertical">
+
+                <com.jcminarro.roundkornerlayout.RoundKornerLinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    app:corner_radius="4dp">
+
+                    <com.elyeproj.loaderviewlibrary.LoaderImageView
+                        android:id="@+id/id_asset_4"
+                        android:layout_width="@dimen/card_promo_w_long"
+                        android:layout_height="@dimen/card_promo_h"
+                        android:scaleType="centerCrop"/>
+
+                </com.jcminarro.roundkornerlayout.RoundKornerLinearLayout>
+
+                <com.elyeproj.loaderviewlibrary.LoaderTextView
+                    android:id="@+id/id_tasset_4_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/headerTitle"
+                    android:textSize="12sp"
+                    app:width_weight="0.7"
+                    />
+
+                <com.elyeproj.loaderviewlibrary.LoaderTextView
+                    android:id="@+id/id_tasset_4_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:textColor="@color/headerTitle"
+                    android:textSize="10sp"
+                    app:width_weight="0.6"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/id_ly_p1_5"
+                android:layout_toRightOf="@id/id_ly_p1_4"
+                android:layout_width="@dimen/card_promo_w_long"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:orientation="vertical">
+
+                <com.jcminarro.roundkornerlayout.RoundKornerLinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    app:corner_radius="4dp">
+
+                    <com.elyeproj.loaderviewlibrary.LoaderImageView
+                        android:id="@+id/id_asset_5"
+                        android:layout_width="@dimen/card_promo_w_long"
+                        android:layout_height="@dimen/card_promo_h"
+                        android:scaleType="centerCrop"/>
+
+                </com.jcminarro.roundkornerlayout.RoundKornerLinearLayout>
+
+                <com.elyeproj.loaderviewlibrary.LoaderTextView
+                    android:id="@+id/id_tasset_5_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/headerTitle"
+                    android:textSize="12sp"
+                    app:width_weight="0.6"
+                    />
+
+                <com.elyeproj.loaderviewlibrary.LoaderTextView
+                    android:id="@+id/id_tasset_5_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:textColor="@color/headerTitle"
+                    android:textSize="10sp"
+                    app:width_weight="0.7"
+                    />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </HorizontalScrollView>
+
+    <ProgressBar
+        android:id="@+id/id_progress_b3"
+        style="?android:attr/progressBarStyle"
+        android:layout_centerInParent="true"
+        android:layout_width="@dimen/dimen_50dp"
+        android:layout_height="@dimen/dimen_50dp"
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:id="@+id/id_ly3_noconnect"
+        android:background="@color/blue"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="1dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="No Connection"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+            android:textColor="@color/colorGray" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

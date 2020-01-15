@@ -1,0 +1,778 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorGray"
+            android:padding="@dimen/dimen_10dp"
+            android:text="Upload Foto"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            android:layout_marginLeft="@dimen/dimen_20dp"
+            android:layout_marginTop="@dimen/dimen_5dp"
+            android:layout_marginBottom="@dimen/dimen_5dp"
+            android:layout_marginRight="@dimen/dimen_5dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/id_imageview_mediapic_1"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:onClick="onPicClick"
+                    android:src="@drawable/add_image"/>
+                <Space
+                    android:layout_width="@dimen/dimen_space_between_thumb"
+                    android:layout_height="match_parent" />
+                <ImageView
+                    android:id="@+id/id_imageview_mediapic_2"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:onClick="onPicClick"
+                    android:visibility="gone"
+                    android:src="@drawable/add_image"/>
+                <Space
+                    android:layout_width="@dimen/dimen_space_between_thumb"
+                    android:layout_height="match_parent" />
+                <ImageView
+                    android:id="@+id/id_imageview_mediapic_3"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:onClick="onPicClick"
+                    android:visibility="gone"
+                    android:src="@drawable/add_image"/>
+                <Space
+                    android:layout_width="@dimen/dimen_space_between_thumb"
+                    android:layout_height="match_parent" />
+                <ImageView
+                    android:id="@+id/id_imageview_mediapic_4"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:onClick="onPicClick"
+                    android:visibility="gone"
+                    android:src="@drawable/add_image"/>
+                <Space
+                    android:layout_width="@dimen/dimen_space_between_thumb"
+                    android:layout_height="match_parent" />
+                <ImageView
+                    android:id="@+id/id_imageview_mediapic_5"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:onClick="onPicClick"
+                    android:visibility="gone"
+                    android:src="@drawable/add_image"/>
+                <Space
+                    android:layout_width="@dimen/dimen_space_between_thumb"
+                    android:layout_height="match_parent" />
+                <ImageView
+                    android:id="@+id/id_imageview_mediapic_6"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:onClick="onPicClick"
+                    android:visibility="gone"
+                    android:src="@drawable/add_image"/>
+                <Space
+                    android:layout_width="@dimen/dimen_space_between_thumb"
+                    android:layout_height="match_parent" />
+                <ImageView
+                    android:id="@+id/id_imageview_mediapic_7"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:onClick="onPicClick"
+                    android:visibility="gone"
+                    android:src="@drawable/add_image"/>
+                <Space
+                    android:layout_width="@dimen/dimen_space_between_thumb"
+                    android:layout_height="match_parent" />
+                <ImageView
+                    android:id="@+id/id_imageview_mediapic_8"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:onClick="onPicClick"
+                    android:visibility="gone"
+                    android:src="@drawable/add_image"/>
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorGray"
+            android:padding="@dimen/dimen_10dp"
+            android:text="Upload Video"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_20dp"
+            android:layout_marginTop="@dimen/dimen_5dp"
+            android:layout_marginBottom="@dimen/dimen_5dp"
+            android:scrollbars="none"
+            android:layout_marginRight="@dimen/dimen_5dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/id_imageview_mediavid_1"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:onClick="onVidClick"
+                    android:src="@drawable/add_video"/>
+                <Space
+                    android:layout_width="@dimen/dimen_space_between_thumb"
+                    android:layout_height="match_parent" />
+                <ImageView
+                    android:id="@+id/id_imageview_mediavid_2"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:visibility="gone"
+                    android:onClick="onVidClick"
+                    android:src="@drawable/add_video"/>
+                <Space
+                    android:layout_width="@dimen/dimen_space_between_thumb"
+                    android:layout_height="match_parent" />
+                <ImageView
+                    android:id="@+id/id_imageview_mediavid_3"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:visibility="gone"
+                    android:onClick="onVidClick"
+                    android:src="@drawable/add_video"/>
+                <Space
+                    android:layout_width="@dimen/dimen_space_between_thumb"
+                    android:layout_height="match_parent" />
+                <ImageView
+                    android:id="@+id/id_imageview_mediavid_4"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:visibility="gone"
+                    android:onClick="onVidClick"
+                    android:src="@drawable/add_video"/>
+                <Space
+                    android:layout_width="@dimen/dimen_space_between_thumb"
+                    android:layout_height="match_parent" />
+                <ImageView
+                    android:id="@+id/id_imageview_mediavid_5"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:visibility="gone"
+                    android:onClick="onVidClick"
+                    android:src="@drawable/add_video"/>
+                <Space
+                    android:layout_width="@dimen/dimen_space_between_thumb"
+                    android:layout_height="match_parent" />
+                <ImageView
+                    android:id="@+id/id_imageview_mediavid_6"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:visibility="gone"
+                    android:onClick="onVidClick"
+                    android:src="@drawable/add_video"/>
+                <Space
+                    android:layout_width="@dimen/dimen_space_between_thumb"
+                    android:layout_height="match_parent" />
+                <ImageView
+                    android:id="@+id/id_imageview_mediavid_7"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:visibility="gone"
+                    android:onClick="onVidClick"
+                    android:src="@drawable/add_video"/>
+                <Space
+                    android:layout_width="@dimen/dimen_space_between_thumb"
+                    android:layout_height="match_parent" />
+                <ImageView
+                    android:id="@+id/id_imageview_mediavid_8"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:visibility="gone"
+                    android:onClick="onVidClick"
+                    android:src="@drawable/add_video"/>
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_5dp"
+            android:background="@color/colorGray"
+            android:padding="@dimen/dimen_10dp"
+            android:text="Detail Asset"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+        <!--
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_10dp"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:text="Judul"
+            android:textColor="@android:color/black" />
+
+        <EditText
+            android:id="@+id/id_edittext_newasset_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_20dp"
+            android:layout_marginRight="@dimen/dimen_5dp"
+            android:inputType="textCapWords"
+            android:hint="Judul asset Anda, singkat dan menarik"
+            android:textSize="@dimen/font_14sp" />
+        -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_10dp"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:text="Judul Singkat"
+            android:textColor="@android:color/black" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_20dp"
+            android:layout_marginRight="@dimen/dimen_10dp"
+            app:counterEnabled="true"
+            app:counterMaxLength="96"
+            app:counterOverflowTextAppearance="@style/MyOverflowText">
+
+            <EditText
+                android:id="@+id/id_edittext_newasset_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="4dp"
+                android:inputType="textCapWords|textMultiLine"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_10dp"
+            android:text="Kategori Asset"
+            android:textColor="@android:color/black" />
+
+        <Spinner
+            android:id="@+id/id_spinner_category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="132dp"
+            android:layout_marginTop="@dimen/dimen_10dp" />
+
+        <LinearLayout
+            android:id="@+id/id_ly_apart_category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:layout_marginBottom="@dimen/dimen_10dp"
+            android:layout_marginLeft="@dimen/dimen_10dp"
+            android:layout_marginRight="72dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kategori Apartemen"
+                android:textColor="@android:color/black" />
+
+            <Spinner
+                android:id="@+id/id_spinner_category_apart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="@dimen/dimen_10dp" />
+
+        </LinearLayout>
+
+
+<!--
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/dimen_5dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="10dp"
+            android:background="@android:color/darker_gray"/> -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_10dp"
+            android:layout_marginTop="12dp"
+            android:text="Harga"
+            android:layout_marginBottom="@dimen/dimen_10dp"
+            android:textColor="@android:color/black" />
+
+        <EditText
+            android:id="@+id/id_edittext_newasset_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_20dp"
+            android:layout_marginTop="@dimen/dimen_5dp"
+            android:layout_marginRight="@dimen/dimen_5dp"
+            android:textSize="@dimen/font_14sp"
+            android:inputType="number"
+            android:hint="Dalam rupiah" />
+
+        <include layout="@layout/layout_pserve"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:layout_marginLeft="@dimen/dimen_10dp"
+            android:layout_marginRight="@dimen/dimen_10dp"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/id_ly_luas_tanah"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Luas Tanah"
+                    android:textColor="@android:color/black" />
+
+                <EditText
+                    android:id="@+id/id_edittext_newasset_luas_tanah"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_10dp"
+                    android:layout_marginRight="@dimen/dimen_5dp"
+                    android:textSize="@dimen/font_14sp"
+                    android:inputType="number"
+                    android:hint="Dalam meter persegi" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/id_ly_luas_bangunan"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Luas Bangunan"
+                    android:textColor="@android:color/black" />
+
+                <EditText
+                    android:id="@+id/id_edittext_newasset_luas_bangunan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_10dp"
+                    android:layout_marginRight="@dimen/dimen_5dp"
+                    android:textSize="@dimen/font_14sp"
+                    android:inputType="number"
+                    android:hint="Dalam meter persegi" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/id_ly_kamar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:layout_marginLeft="@dimen/dimen_10dp"
+            android:layout_marginRight="@dimen/dimen_10dp"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Jumlah kamar tidur"
+                    android:textColor="@android:color/black" />
+
+                <EditText
+                    android:id="@+id/id_edittext_newasset_bednum"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_10dp"
+                    android:layout_marginRight="@dimen/dimen_5dp"
+                    android:textSize="@dimen/font_14sp"
+                    android:inputType="number"
+                    android:hint="Misal: 4" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Jumlah kamar mandi"
+                    android:textColor="@android:color/black" />
+
+                <EditText
+                    android:id="@+id/id_edittext_newasset_bathnum"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_10dp"
+                    android:layout_marginRight="@dimen/dimen_5dp"
+                    android:textSize="@dimen/font_14sp"
+                    android:inputType="number"
+                    android:hint="Misal: 3" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/id_ly_garage_floor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:layout_marginLeft="@dimen/dimen_10dp"
+            android:layout_marginRight="@dimen/dimen_10dp"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Jumlah lantai"
+                    android:textColor="@android:color/black" />
+
+                <EditText
+                    android:id="@+id/id_edittext_newasset_floornum"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_10dp"
+                    android:layout_marginRight="@dimen/dimen_5dp"
+                    android:textSize="@dimen/font_14sp"
+                    android:inputType="number"
+                    android:hint="Misal: 2" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/id_lv_newasset_garagenum"
+                android:orientation="vertical"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Jumlah garasi (jika ada)"
+                    android:textColor="@android:color/black" />
+
+                <EditText
+                    android:id="@+id/id_edittext_newasset_garagenum"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_10dp"
+                    android:layout_marginRight="@dimen/dimen_5dp"
+                    android:textSize="@dimen/font_14sp"
+                    android:inputType="number"
+                    android:hint="Misal: 1" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/id_ly_watt_shm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:layout_marginLeft="@dimen/dimen_10dp"
+            android:layout_marginRight="@dimen/dimen_10dp"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/id_ly_newasset_shm"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sertifikat"
+                    android:textColor="@android:color/black" />
+
+                <EditText
+                    android:id="@+id/id_edittext_newasset_shm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_10dp"
+                    android:layout_marginRight="@dimen/dimen_5dp"
+                    android:textSize="@dimen/font_14sp"
+                    android:hint="Misal: SHM" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/id_ly_newasset_watt"
+                android:orientation="vertical"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Daya listrik"
+                    android:textColor="@android:color/black" />
+
+                <EditText
+                    android:id="@+id/id_edittext_newasset_watt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_10dp"
+                    android:layout_marginRight="@dimen/dimen_5dp"
+                    android:textSize="@dimen/font_14sp"
+                    android:inputType="number"
+                    android:hint="Misal: 2300" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_10dp"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:text="Deskripsi"
+            android:layout_marginBottom="@dimen/dimen_10dp"
+            android:textColor="@android:color/black" />
+
+        <EditText
+            android:id="@+id/id_edittext_newasset_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_20dp"
+            android:layout_marginTop="@dimen/dimen_5dp"
+            android:layout_marginRight="@dimen/dimen_5dp"
+            android:textSize="@dimen/font_14sp"
+            android:onClick="onDescriptionClick"
+            android:focusableInTouchMode="false"
+            android:scrollbars="none"
+            android:hint="Deskripsi detail dari asset Anda"
+            android:inputType="none"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:layout_marginBottom="@dimen/dimen_10dp"
+            android:background="@color/colorGray"
+            android:padding="@dimen/dimen_10dp"
+            android:text="Lokasi Asset"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_10dp"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:text="Alamat"
+            android:layout_marginBottom="@dimen/dimen_10dp"
+            android:textColor="@android:color/black" />
+
+        <EditText
+            android:id="@+id/id_edittext_newasset_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_20dp"
+            android:layout_marginTop="@dimen/dimen_5dp"
+            android:layout_marginRight="@dimen/dimen_5dp"
+            android:textSize="@dimen/font_14sp"
+            android:inputType="textCapWords"
+            android:hint="Alamat asset Anda" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_10dp"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:text="Kota"
+            android:layout_marginBottom="@dimen/dimen_10dp"
+            android:textColor="@android:color/black" />
+
+        <EditText
+            android:id="@+id/id_edittext_newasset_city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_20dp"
+            android:layout_marginTop="@dimen/dimen_5dp"
+            android:layout_marginRight="@dimen/dimen_5dp"
+            android:textSize="@dimen/font_14sp"
+            android:inputType="textCapWords"
+            android:hint="Nama kota tempat asset Anda berada" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_10dp"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:text="Provinsi"
+            android:layout_marginBottom="@dimen/dimen_10dp"
+            android:textColor="@android:color/black" />
+
+        <EditText
+            android:id="@+id/id_edittext_newasset_province"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_20dp"
+            android:layout_marginTop="@dimen/dimen_5dp"
+            android:layout_marginRight="@dimen/dimen_5dp"
+            android:textSize="@dimen/font_14sp"
+            android:inputType="textCapWords"
+            android:hint="Nama provinsi tempat asset Anda berada" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_10dp"
+            android:layout_marginTop="@dimen/dimen_5dp"
+            android:text="Akan lebih memudahkan pembeli mencari posisi asset yang Anda iklankan jika Anda menyertakan koordinatnya. Ketuk area dibawah untuk membuka map"
+            android:layout_marginBottom="@dimen/dimen_10dp"
+            android:textColor="@android:color/black" />
+
+        <ImageView
+            android:id="@+id/id_imageview_newasset_map"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:src="@drawable/maps"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true"
+            android:clickable="true"
+            android:onClick="onMapClick" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:layout_marginBottom="@dimen/dimen_10dp"
+            android:background="@color/colorGray"
+            android:padding="@dimen/dimen_10dp"
+            android:text="Lain-lain"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/id_checkbox_swimpool"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kolam renang" />
+
+        <CheckBox
+            android:id="@+id/id_checkbox_health"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dekat fasilitas kesehatan" />
+
+        <CheckBox
+            android:id="@+id/id_checkbox_wshp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dekat fasilitas ibadah" />
+
+        <CheckBox
+            android:id="@+id/id_checkbox_market"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dekat pusat perbelanjaan" />
+
+        <CheckBox
+            android:id="@+id/id_checkbox_public"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dekat perumahan umum" />
+
+        <CheckBox
+            android:id="@+id/id_checkbox_highway"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dekat jalan raya" />
+
+        <CheckBox
+            android:id="@+id/id_checkbox_tourist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dekat tempat wisata" />
+
+        <CheckBox
+            android:id="@+id/id_checkbox_school"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dekat fasilitas pendidikan" />
+
+        <CheckBox
+            android:id="@+id/id_checkbox_toll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dekat jalan toll" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_10dp"
+            android:background="@color/colorPrimary"
+            android:onClick="onSaveAssetClick"
+            android:text="Pasang Iklan"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+</ScrollView>

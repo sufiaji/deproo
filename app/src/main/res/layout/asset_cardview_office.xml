@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/id_asset_cardview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardCornerRadius="8dp"
+    android:layout_margin="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="132dp">
+
+            <com.elyeproj.loaderviewlibrary.LoaderImageView
+                android:id="@+id/id_pict_asset"
+                android:layout_width="match_parent"
+                android:scaleType="centerCrop"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/id_card1_broker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:paddingRight="4dp"
+                android:paddingLeft="4dp"
+                android:paddingBottom="4dp"
+                android:background="@color/orangeF3583A"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <com.elyeproj.loaderviewlibrary.LoaderTextView
+                android:id="@+id/id_card1_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:paddingRight="4dp"
+                android:paddingLeft="4dp"
+                android:paddingBottom="4dp"
+                android:background="#84000000"
+                android:textColor="@color/white"
+                android:textSize="12sp"/>
+
+        </RelativeLayout>
+
+        <include layout="@layout/aseet_cardview_o1"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:layout_marginLeft="@dimen/dimen_20dp"
+            android:layout_marginRight="@dimen/dimen_20dp"
+            android:background="@color/colorGray"/>
+
+        <include layout="@layout/aseet_cardview_o2"/>
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

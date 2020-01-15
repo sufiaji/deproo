@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/id_layout_top_broker_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:weightSum="2">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1"
+            android:text="Top 5 Broker"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="See all"
+            android:textStyle="bold"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="8dp"
+            android:gravity="right" />
+
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:layout_below="@id/id_layout_top_broker_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/id_ly_b1_1"
+                android:layout_width="@dimen/card_promo_w"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:onClick="onBroker1Click"
+                android:orientation="vertical">
+
+                <com.jcminarro.roundkornerlayout.RoundKornerLinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    app:corner_radius="4dp">
+
+                    <com.elyeproj.loaderviewlibrary.LoaderImageView
+                        android:id="@+id/id_tbroker_1"
+                        android:layout_width="@dimen/card_promo_w"
+                        android:layout_height="@dimen/card_promo_h_long"
+                        android:scaleType="fitXY"/>
+
+                </com.jcminarro.roundkornerlayout.RoundKornerLinearLayout>
+
+                <com.elyeproj.loaderviewlibrary.LoaderTextView
+                    android:id="@+id/id_ttbroker_1_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/headerTitle"
+                    android:textSize="10sp"
+                    app:width_weight="0.6"
+                    />
+
+                <com.elyeproj.loaderviewlibrary.LoaderTextView
+                    android:id="@+id/id_ttbroker_1_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:textColor="@color/headerTitle"
+                    android:textSize="10sp"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/id_ly_b1_2"
+                android:layout_toRightOf="@id/id_ly_b1_1"
+                android:layout_width="@dimen/card_promo_w"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:orientation="vertical">
+
+                <com.jcminarro.roundkornerlayout.RoundKornerLinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    app:corner_radius="4dp">
+
+                    <com.elyeproj.loaderviewlibrary.LoaderImageView
+                        android:id="@+id/id_tbroker_2"
+                        android:layout_width="@dimen/card_promo_w"
+                        android:layout_height="@dimen/card_promo_h_long"
+                        android:scaleType="fitXY"/>
+
+                </com.jcminarro.roundkornerlayout.RoundKornerLinearLayout>
+
+                <com.elyeproj.loaderviewlibrary.LoaderTextView
+                    android:id="@+id/id_ttbroker_2_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/headerTitle"
+                    app:width_weight="0.6"
+                    android:textSize="10sp" />
+
+                <com.elyeproj.loaderviewlibrary.LoaderTextView
+                    android:id="@+id/id_ttbroker_2_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:textColor="@color/headerTitle"
+                    android:textSize="10sp"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/id_ly_b1_3"
+                android:layout_toRightOf="@id/id_ly_b1_2"
+                android:layout_width="@dimen/card_promo_w"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:orientation="vertical">
+
+                <com.jcminarro.roundkornerlayout.RoundKornerLinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    app:corner_radius="4dp">
+
+                    <com.elyeproj.loaderviewlibrary.LoaderImageView
+                        android:id="@+id/id_tbroker_3"
+                        android:layout_width="@dimen/card_promo_w"
+                        android:layout_height="@dimen/card_promo_h_long"
+                        android:scaleType="fitXY"/>
+
+                </com.jcminarro.roundkornerlayout.RoundKornerLinearLayout>
+
+                <com.elyeproj.loaderviewlibrary.LoaderTextView
+                    android:id="@+id/id_ttbroker_3_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/headerTitle"
+                    android:textSize="10sp"
+                    app:width_weight="0.6"
+                    />
+
+                <com.elyeproj.loaderviewlibrary.LoaderTextView
+                    android:id="@+id/id_ttbroker_3_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:textColor="@color/headerTitle"
+                    android:textSize="10sp"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/id_ly_b1_4"
+                android:layout_toRightOf="@id/id_ly_b1_3"
+                android:layout_width="@dimen/card_promo_w"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:orientation="vertical">
+
+                <com.jcminarro.roundkornerlayout.RoundKornerLinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    app:corner_radius="4dp">
+
+                    <com.elyeproj.loaderviewlibrary.LoaderImageView
+                        android:id="@+id/id_tbroker_4"
+                        android:layout_width="@dimen/card_promo_w"
+                        android:layout_height="@dimen/card_promo_h_long"
+                        android:scaleType="fitXY"/>
+
+                </com.jcminarro.roundkornerlayout.RoundKornerLinearLayout>
+
+                <com.elyeproj.loaderviewlibrary.LoaderTextView
+                    android:id="@+id/id_ttbroker_4_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/headerTitle"
+                    android:textSize="10sp"
+                    app:width_weight="0.6"
+                    />
+
+                <com.elyeproj.loaderviewlibrary.LoaderTextView
+                    android:id="@+id/id_ttbroker_4_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:textColor="@color/headerTitle"
+                    android:textSize="10sp"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/id_ly_b1_5"
+                android:layout_toRightOf="@id/id_ly_b1_4"
+                android:layout_width="@dimen/card_promo_w"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:orientation="vertical">
+
+                <com.jcminarro.roundkornerlayout.RoundKornerLinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    app:corner_radius="4dp">
+
+                    <com.elyeproj.loaderviewlibrary.LoaderImageView
+                        android:id="@+id/id_tbroker_5"
+                        android:layout_width="@dimen/card_promo_w"
+                        android:layout_height="@dimen/card_promo_h_long"
+                        android:scaleType="fitXY"/>
+
+                </com.jcminarro.roundkornerlayout.RoundKornerLinearLayout>
+
+                <com.elyeproj.loaderviewlibrary.LoaderTextView
+                    android:id="@+id/id_ttbroker_5_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/headerTitle"
+                    android:textSize="10sp"
+                    app:width_weight="0.6"
+                    />
+
+                <com.elyeproj.loaderviewlibrary.LoaderTextView
+                    android:id="@+id/id_ttbroker_5_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:textColor="@color/headerTitle"
+                    android:textSize="10sp"
+                    />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </HorizontalScrollView>
+
+    <ProgressBar
+        android:id="@+id/id_progress_b1"
+        style="?android:attr/progressBarStyle"
+        android:layout_centerInParent="true"
+        android:layout_width="@dimen/dimen_50dp"
+        android:layout_height="@dimen/dimen_50dp" />
+
+    <RelativeLayout
+        android:id="@+id/id_ly1_noconnect"
+        android:background="@color/blue"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="1dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="No Connection"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+            android:textColor="@color/colorGray" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "69524391139",
+    "firebase_url": "https://deproo-1525519918764.firebaseio.com",
+    "project_id": "deproo-1525519918764",
+    "storage_bucket": "deproo-1525519918764.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:69524391139:android:c37dd0516bf606b5",
+        "android_client_info": {
+          "package_name": "com.android.application"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "69524391139-omab6kac50n03f6pp7gjl9frhr7sjmcm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCrC3PEOtpd50TBJ5jiAZXV7i32bXsXrYk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oa1069568716159uth_client": [
+            {
+              "client_id": "69524391139-omab6kac50n03f6pp7gjl9frhr7sjmcm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

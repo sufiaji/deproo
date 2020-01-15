@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginTop="@dimen/dimen_10dp"
+    android:orientation="vertical">
+
+    <!-- Row 1: Type of Asset & Button Open -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="6">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_height="match_parent">
+
+            <com.elyeproj.loaderviewlibrary.LoaderTextView
+                android:id="@+id/id_card1_category"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="KANTOR"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:textColor="@color/gray898989"
+                android:textSize="12sp"
+                app:fontFamily="@font/archivo_black" />
+
+            <com.elyeproj.loaderviewlibrary.LoaderTextView
+                android:id="@+id/id_card1_pserve"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sewa"
+                android:textSize="10sp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dimen_10dp"
+                android:paddingLeft="@dimen/dimen_10dp"
+                android:paddingRight="@dimen/dimen_10dp"
+                android:background="@drawable/round_textview_4dp"
+                android:textColor="@color/gray898989" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/id_card1_button"
+            android:layout_width="0dp"
+            android:layout_height="24dp"
+            android:layout_weight="1"
+            android:text="open"
+            android:textSize="10sp"
+            android:textColor="@color/white"
+            android:layout_marginLeft="@dimen/dimen_20dp"
+            android:background="@drawable/round_button_green"/>
+
+    </LinearLayout>
+
+    <!-- Row 2: Price & No of discussion -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="2dp"
+        android:weightSum="10">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="7"
+            android:layout_height="wrap_content">
+
+            <com.elyeproj.loaderviewlibrary.LoaderTextView
+                android:id="@+id/id_card1_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:shadowColor="@color/gray898989"
+                android:text="Rp120,780,000,000"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:fontFamily="@font/lato_black" />
+
+            <com.elyeproj.loaderviewlibrary.LoaderTextView
+                android:id="@+id/id_card1_monthyear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:text="/bln"
+                android:textSize="11sp"
+                app:fontFamily="@font/lato_black" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.elyeproj.loaderviewlibrary.LoaderTextView
+                android:id="@+id/id_card1_discuss"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="right"
+                android:textSize="12sp"
+                app:fontFamily="@font/lato_bold" />
+
+            <com.elyeproj.loaderviewlibrary.LoaderTextView
+                android:layout_marginTop="2dp"
+                android:id="@+id/id_card1_viewer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|right"
+                android:gravity="right"
+                android:textSize="12sp"
+                app:fontFamily="@font/lato_bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Row 3: Address -->
+
+    <com.elyeproj.loaderviewlibrary.LoaderTextView
+        android:id="@+id/id_card1_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1040 James Street, Burnaby, Toronto"
+        android:textStyle="bold"
+        android:textSize="12sp"
+        android:gravity="center_vertical"
+        android:drawableLeft="@drawable/ic_deproo_location"
+        app:fontFamily="@font/lato_bold" />
+
+</LinearLayout>

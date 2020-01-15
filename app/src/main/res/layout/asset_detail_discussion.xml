@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/id_asset_detail_discussion"
+    android:layout_marginTop="1dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.robertlevonyan.views.expandable.Expandable
+        app:exp_animateExpand="true"
+        android:id="@+id/expandable_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/header_description"
+            layout="@layout/header_view_discussion" />
+
+        <include
+            android:id="@+id/content_description"
+            layout="@layout/content_view_discussion" />
+
+    </com.robertlevonyan.views.expandable.Expandable>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Welcome to my Deproo!"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/logout_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@color/com_facebook_blue"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:onClick="onLogoutClick"
+        android:text="Logout via Facebook"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>

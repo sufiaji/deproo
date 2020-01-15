@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:scrollbars="none">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include layout="@layout/home_slide2" />
+            <include layout="@layout/home_profile_2" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp">
+
+                <include layout="@layout/home_category_small" />
+            </LinearLayout>
+
+            <com.jcminarro.roundkornerlayout.RoundKornerRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="96dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                app:corner_radius="8dp"
+                android:background="@drawable/gradient_list"/>
+
+            <!-- separator -->
+            <!--
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/colorGray"/>
+
+            <include layout="@layout/home_category" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="@color/colorGray"/>
+            -->
+            <include layout="@layout/home_broker_4" />
+
+            <include layout="@layout/home_properti_2" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_20dp" />
+
+        </LinearLayout>
+
+
+</ScrollView>

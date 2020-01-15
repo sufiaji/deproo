@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.deproo.android.deproo.activity.AddReviewActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/id_broker_picture"
+        android:layout_width="148dp"
+        android:layout_height="148dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/broker_fake"/>
+
+    <TextView
+        android:id="@+id/id_broker_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_below="@id/id_broker_picture"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/lato_bold"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:text="Kurt Cobain"/>
+
+    <RatingBar
+        android:id="@+id/id_broker_rating"
+        style="@android:style/Widget.Holo.Light.RatingBar"
+        android:layout_marginTop="24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:isIndicator="false"
+        android:layout_below="@id/id_broker_name"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/id_broker_rating"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:layout_marginLeft="@dimen/dimen_20dp"
+        android:layout_marginRight="@dimen/dimen_20dp"
+        app:hintTextAppearance="@style/MyHintText">
+
+        <EditText
+            android:id="@+id/id_edittext_review"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dimen_10dp"
+            android:paddingRight="@dimen/dimen_10dp"
+            android:hint="Beri ulasan broker ini"
+            android:inputType="textMultiLine"
+            android:theme="@style/MyEditText"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/id_button_send"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_20dp"
+        android:layout_marginRight="@dimen/dimen_20dp"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:layout_marginBottom="@dimen/dimen_20dp"
+        android:layout_alignParentBottom="true"
+        android:padding="18dp"
+        android:text="Kirim"
+        android:onClick="onSaveClick"
+        android:textColor="@color/white"
+        android:theme="@style/MyButton"/>
+
+</RelativeLayout>

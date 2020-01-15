@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/gradient_list">
+
+    <ImageView
+        android:id="@+id/id_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="18dp"
+        android:clickable="true"
+        android:onClick="onCustomBackClick"
+        android:src="@drawable/arrow_back"/>
+
+    <ImageView
+        android:id="@+id/id_fav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_deproo_fav_off"
+        android:layout_marginTop="18dp"
+        android:layout_marginRight="18dp"
+        android:clickable="true"
+        android:onClick="onFavClick"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:layout_marginRight="12dp"
+        android:layout_toLeftOf="@id/id_fav"
+        android:src="@drawable/ic_deproo_share"
+        android:clickable="true"
+        android:onClick="onShareClick"
+        />
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/id_broker_picture"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/broker_fake"/>
+
+    <ImageView
+        android:id="@+id/id_broker_diamond"
+        android:layout_marginTop="28dp"
+        android:layout_alignRight="@id/id_broker_picture"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:scaleType="fitXY"
+        android:layout_marginRight="14dp"
+        android:src="@drawable/diamond1"/>
+    <!--
+    <RatingBar
+        android:id="@+id/id_broker_rating"
+        style="@android:style/Widget.Holo.RatingBar.Indicator"
+        android:layout_marginTop="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/id_broker_picture"/>
+    -->
+    <RatingBar
+        android:id="@+id/id_broker_rating"
+        style="@style/Widget.AppCompat.RatingBar.Small"
+        android:layout_marginTop="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/id_broker_picture"/>
+    <TextView
+        android:id="@+id/id_broker_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/id_broker_rating"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/lato_bold"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:text="Kurt Cobain"/>
+
+    <TextView
+        android:id="@+id/id_broker_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/id_broker_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp"
+        android:textSize="12sp"
+        android:text="adsdsdfdsgg"/>
+
+    <TextView
+        android:id="@+id/id_broker_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/id_broker_location"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:textColor="@color/black"
+        android:textStyle="italic"
+        android:gravity="center"
+        android:textSize="13sp"
+        android:text="yuytiuiiyuiuoiyuoiyuiykk"/>
+
+    <LinearLayout
+        android:id="@+id/id_broker_msg"
+        android:layout_below="@id/id_broker_title"
+        android:layout_marginTop="18dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:clickable="true"
+            android:onClick="onChatClick"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/msg_96"/>
+
+        <!--
+        <ImageView
+            android:clickable="true"
+            android:onClick="onInboxClick"
+            android:layout_marginLeft="8dp"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/email_96"/>
+            -->
+
+        <ImageView
+            android:clickable="true"
+            android:onClick="onCallClick"
+            android:layout_marginLeft="8dp"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/call_96"/>
+
+        <ImageView
+            android:clickable="true"
+            android:onClick="onWhatsappClick"
+            android:layout_marginLeft="8dp"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/whatsapp_96"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@id/id_broker_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include
+            layout="@layout/broker_review_2" />
+    </LinearLayout>
+
+</RelativeLayout>

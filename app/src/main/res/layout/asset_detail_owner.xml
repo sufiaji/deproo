@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/id_asset_detail_owner"
+    android:layout_marginTop="1dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:onClick="onBrokerClick"
+            android:id="@+id/id_brokerpic"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/noimage"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="18dp" >
+            
+            <LinearLayout
+                android:clickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerVertical="true">
+
+                <com.libRG.CustomTextView
+                    android:onClick="onBrokerClick"
+                    android:id="@+id/id_brokername"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:lib_checkedDrawable="@drawable/ic_deproo_bro"
+                    app:lib_checkedIconPosition="left"
+                    app:lib_setChecked="true"
+                    app:lib_setCheckedText="true"
+                    android:textStyle="bold"
+                    android:text=""/>
+
+                <RatingBar
+                    android:id="@+id/id_brokerrating"
+                    style="@android:style/Widget.Holo.RatingBar.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+
+                <com.elyeproj.loaderviewlibrary.LoaderTextView
+                    android:id="@+id/id_brokernumasset"
+                    android:layout_width="match_parent"
+                    android:layout_marginRight="8dp"
+                    app:width_weight="0.4"
+                    android:layout_height="wrap_content"
+                    android:text=""/>
+
+                <TextView
+                    android:id="@+id/id_brokerjoinsince"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="italic"
+                    android:text=""/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="12dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:onClick="onChatClick"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="6dp"
+                android:textSize="10sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chat Penjual"
+                android:textColor="@color/black"
+                android:drawableLeft="@drawable/ic_deproo_chat"
+                android:background="@drawable/round_button_white"/>
+
+            <Button
+                android:onClick="onFollowUserClick"
+                android:layout_marginRight="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Follow"
+                android:textSize="10sp"
+                android:textColor="@color/black"
+                android:drawableLeft="@drawable/ic_deproo_favourite"
+                android:background="@drawable/round_button_white"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

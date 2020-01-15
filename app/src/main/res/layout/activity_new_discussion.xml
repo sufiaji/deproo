@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="24dp"
+    android:layout_marginRight="24dp"
+    android:layout_marginTop="32dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:text="Ada pertanyaan?"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:textSize="12sp"
+        android:drawableLeft="@drawable/discussion_48"
+        android:gravity="center_vertical"
+        android:text="Diskusikan dengan penjual atau pengguna lain"/>
+
+    <Button
+        android:onClick="onNewDiscussionClick"
+        android:layout_marginTop="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tulis Pertanyaan"
+        android:background="@drawable/round_button_white"/>
+
+    <View
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="24dp"
+        android:layout_width="match_parent"
+        android:background="@color/gray3A3D35"
+        android:layout_height="1dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:drawableLeft="@drawable/conversation_48"
+        android:gravity="center_vertical"
+        android:text="Atau kirim pesan ke penjual"/>
+
+    <Button
+        android:onClick="onNewPrivateMessageClick"
+        android:layout_marginTop="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Chat Penjual"
+        android:background="@drawable/round_button_white"/>
+</LinearLayout>
